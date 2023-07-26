@@ -1,0 +1,26 @@
+name: Update and Publish
+
+on:
+  push:
+    branches:
+      - main  # Change this to the default branch name if different
+
+jobs:
+  update_and_publish:
+    runs-on: windows-latest  # Use the appropriate runner for PowerShell
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run PowerShell script
+        run: powershell -File ./MoD_updater.ps1
+
+      - name: Upload and Publish files
+        uses: actions/upload-artifact@v2
+        with:
+          name: published-files
+          path:             
+            "Game Specific"
+            General
+            Logs
