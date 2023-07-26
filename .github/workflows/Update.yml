@@ -20,7 +20,16 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: published-files
-          path:             
-            "Game Specific"
-            General
-            Logs
+          path: "Game Specific"
+
+      - name: Upload and Publish files
+        uses: actions/upload-artifact@v2
+        with:
+          name: published-files
+          path: General
+
+      - name: Upload and Publish files
+        uses: actions/upload-artifact@v2
+        with:
+          name: published-files
+          path: Logs
