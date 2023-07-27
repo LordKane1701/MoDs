@@ -1,6 +1,7 @@
 name: Update and Publish
 
 on:
+  workflow_dispatch: {}
   push:
     branches:
       - main  # Change this to the default branch name if different
@@ -16,20 +17,18 @@ jobs:
       - name: Run PowerShell script
         run: powershell -File ./MoD_updater.ps1
 
-      - name: Upload and Publish files
-        uses: actions/upload-artifact@v2
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          name: published-files
-          path: "Game Specific"
+          commit_message: Update files after processing
 
-      - name: Upload and Publish files
-        uses: actions/upload-artifact@v2
-        with:
-          name: published-files
-          path: General
-
-      - name: Upload and Publish files
-        uses: actions/upload-artifact@v2
-        with:
-          name: published-files
-          path: Logs
+      # Use the secret token for authentication
+      - name: Push Changes to GitHub
+        run: |
+          git config user.name "AlphaOmega2020"
+          git config user.email "AlphaOmegaxUK@outlook.com"
+          git add .
+          git commit -m "Updated files"
+          git push https://your-access-token@github.com/InsideEarth2150/MoDs.git HEAD:main
+        env:
+          MY_ACCESS_TOKEN: ${{ secrets.UPDATER_BOT_SECRET }}
