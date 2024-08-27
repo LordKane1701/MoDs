@@ -1,5 +1,5 @@
 ### Earth 2150: The Moon Project
-### Advanced AI mod v1.0
+### Advanced AI mod v1.1
 *by Guardian*
 
 
