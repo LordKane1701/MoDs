@@ -2,6 +2,7 @@
 ### Advanced AI mod v1.2
 *by Guardian*
 
+**WARNING: The v1.2 is inferior to the new 1.3 version which is still in development. The "in progress" versions are being released at Discord and it is recommended to get them isntead. The most important difference is, taht 1.3 features economy mode, which means that new AI can mine resources. The latest "as is" version is 1.3dev15 https://discord.com/channels/572336961143177216/1245304003731132466/1321533642677157998), however this tends to change dynamically. When the final 1.3 version is made, it will become available here, and the description below will be updated.**
 
 This is a mod for The Moon Project that provides extremely strong AI for Skirmish or Multiplayer games.
 #### Key features
