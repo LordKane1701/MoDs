@@ -1,38 +1,32 @@
 ### Earth 2150: The Moon Project
-### Advanced AI mod v1.2
+### Advanced AI mod v1.3
 *by Guardian*
-
-**WARNING: The v1.2 is inferior to the new 1.3 version which is still in development. The "in progress" versions are being released at Discord and it is recommended to get them isntead. The most important difference is, taht 1.3 features economy mode, which means that new AI can mine resources. The latest "as is" version is 1.3dev15 https://discord.com/channels/572336961143177216/1245304003731132466/1321533642677157998), however this tends to change dynamically. When the final 1.3 version is made, it will become available here, and the description below will be updated.**
 
 This is a mod for The Moon Project that provides extremely strong AI for Skirmish or Multiplayer games.
 #### Key features
 - AI is almost completely rebuilt from scratch. Native inefficient code was replaced by new implementation.
 - 24 new bots - 6 difficulty levels (`[VE]` - Very Easy, `[E]` - Easy, `[M]` - Medium, `[H]` - Hard, `[VH]` - Very Hard and `[I]` - Impossible) and 4 tech focus variants:
-   - Mars (Cannon)
+   - Mars (Cannon - UCS can randomly go for Grenades, LC will go for MG + Sonic)
    - Jupiter (Energy)
    - Quirinus (Rockets)
-   - Fortuna (random)
+   - Fortuna (random of the above)
 - New game mode (**bots will work only in that gamemode**) based on "IEO - Destroy enemy structures" mode
 - **AI is fair** - there are no free units or any unfair advantages for the bots. **It's NOT as in Lost Souls**.
-- The highest difficulty level is incredibly difficult. I would estimate it to be at least **100-150x** stronger
-  than what built-in Experts could offer. Beating ED/UCS `[I]`mpossible bot in a 1v1 is virtually impossible for human 
+- The highest difficulty level is incredibly difficult. In TechWar mode, I would estimate it to be at least **100-150x** stronger
+  than what built-in Experts could offer. Beating ED/UCS `[I]`mpossible bot in a TechWar 1v1 is virtually impossible for human 
   players. Lower difficulty levels should be manageable for everyone, so **everyone can have fun from this mod**.
   Still, even lower difficulty levels can prove very tricky, especially for non-multi players.
-- Accelerated LC mode (more builders for LC)
+- In modes with mining resources, the strongest AI plays at a level of a strong MP player and even the strongest multi player can lose a 1v1 if they are caught off guard.
 
 #### Limitations
-- In the current version AI cannot play in other modes than Techwar (infinite) money. There are also
-  some options available that limit all players (or just AI) researches of MDW, bombs and/or artillery.
-  The mod is intended to support economy mode in future versions.
 - LC players are very weak compared to ED/UCS players, but that's not AI limitation, but the game limitation.
   LC just cannot build faster than it currently does, what makes it multiple times weaker in Techwar.
-  Despite accelerated LC mode, `[I]`mpossible LC bot still cannot beat `[M]`edium ED/UCS bots in a 1v1.
-- The mod provides a few custom maps with ` (AI)` prefix. Those maps are very open and flat, but that's only
-  to make life easier for bots. Bots should generally work on other maps, but they may be having some issues,
-  with units blocking themselves, builders attempting to build in unreachable locations, etc.
-- Saving and loading a game will break bots behaviour. They will still "play", but reloading will make them
-  stop repairing building complexes, may cause issues with constructing supply centers etc. It is generally
-  **not recommended to reload**.
+  Despite accelerated LC mode, `[I]`mpossible LC bot still cannot beat `[M]`edium ED/UCS bots in a TechWar 1v1.
+- in economy modes, LC is still weaker than others, but the difference is not that big anymore
+- The mod provides quite a few custom maps with ` (AI)` prefix. Those maps should work well with this mod.
+  On other maps, bots may experience some issues with mining resources, units blocking themselves,
+  builders attempting to build in unreachable locations, etc.
+- Saving and loading a game will crash the game. For now, it ** is not possible to reload**.
 
 #### Installation
 1. Ensure that you have your game patched to at least **2.1.1.1** (singleplayer) or **2.2.1.3** (multiplayer) patch.
@@ -48,6 +42,10 @@ There were however other people from Inside Earth community involved. <br/>
 **Tests**: *Ajack*, *Animal*, *Noctis*, *Szakael*
 
 #### Changelog
+v1.3:
+- added economy modes (with mining resources)
+- multiple AI improvements and enhancements
+
 v1.2:
 - added research mode for bots
 - rebalanced AI difficulty levels, so that `[VE]` and `[E]` bots are noticeably easier.
