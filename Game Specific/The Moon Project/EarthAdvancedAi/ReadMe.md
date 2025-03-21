@@ -1,6 +1,8 @@
 ### Earth 2150: The Moon Project
-### Advanced AI mod v1.3
+### Advanced AI mod v1.4
 *by Guardian*
+
+**WARNING: There are two custom game modes here - the one with "-MP-" in name should be used only in 2.2.2.2+ multiplayer patch. It will be broken and may crash in SP patch. Use the first game mode (IEO-AdvAI-DestroyStructures) for single player.
 
 This is a mod for The Moon Project that provides extremely strong AI for Skirmish or Multiplayer games.
 #### Key features
@@ -42,6 +44,20 @@ There were however other people from Inside Earth community involved. <br/>
 **Tests**: *Ajack*, *Animal*, *Noctis*, *Szakael*
 
 #### Changelog
+v1.4:
+- new gamemode for 2.2.2.2+ patch only (it will be unified in the future)
+- fix game crashing in SP patch
+- fix building, rebuilding and expansion issues
+- fix LC building structures in hostile areas
+- disable AA Salamanders (again)
+- reduce transmitters count for each UCS military complex 4 > 2
+- soften artillery fire conditions in eco mode (still more harsh than in techwar)
+- add supply center to each artillery complex, just like in TechWar
+- mount banners on all supply centers
+- disable guardian dropping in TechWar
+- fix missing unit names in AI unit templates
+- AI uses player colours when talks about other players, to make them more distinguishable
+
 v1.3:
 - added economy modes (with mining resources)
 - multiple AI improvements and enhancements
