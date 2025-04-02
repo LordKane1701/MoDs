@@ -1,5 +1,5 @@
 ### Earth 2150: The Moon Project
-### Advanced AI mod v1.4
+### Advanced AI mod v1.5
 *by Guardian*
 
 **WARNING: There are two custom game modes here - the one with "-MP-" in name should be used only in 2.2.2.2+ multiplayer patch. It will be broken and may crash in SP patch. Use the first game mode (IEO-AdvAI-DestroyStructures) for single player.
@@ -44,6 +44,25 @@ There were however other people from Inside Earth community involved. <br/>
 **Tests**: *Ajack*, *Animal*, *Noctis*, *Szakael*
 
 #### Changelog
+v1.5:
+- fix LC power issues in x1 research speed
+- fix ED Quirinus weapon selection (he could prefer cannons over rockets)
+- small production queue fixes (a bit more banners and radars, removed single aircraft unit that gets produced after researching aircraft)
+- better rush defense
+- reduce ED and LC factories count
+- fix UCS selling buildings multiple times (the bug reappeared at some point)
+- AI will build SDI and stationary radars when they are needed (used to build only if it had plenty of spare money, which doesn't happen for better bots)
+- dynamic builder count - AI will adjust builders amount to current needs instead of producing some hardcoded amount
+- new FFA Equality versions - `[B] v1` and `[B] v1.1`
+- AI will no longer drop shields below medium if enemy UCS MDW exists
+- bots will focus fire artillery and LC mines
+- "big game mode" - if AI has more than 12 own, uncontested resource fields it will enter an alternative mode, similar to the recent FFA challenge. It will generally be more economy focused in early minutes.
+- ED will attempt to reset and fix taigas that cannot reach mine (it sometimes happened when they got blocked by a builder occupying the "pick up" spot)
+- ED Jupiter will no longer produce Urals **(`[I]` only)**
+- fixed a bug where AI could send units to the northern edge of the map when it couldn't figure out the correct attack direction
+- fixed a bug in endless resources mode, where resources could seemingly disappear
+- new `Ieo.CheckLevel` command for editor, that lists (and saves to the log file) potential issues that the AI may have with the current level
+
 v1.4:
 - new gamemode for 2.2.2.2+ patch only (it will be unified in the future)
 - fix game crashing in SP patch
